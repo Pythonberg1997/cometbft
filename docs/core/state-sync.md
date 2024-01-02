@@ -1,4 +1,4 @@
---- 
+---
 order: 11
 ---
 
@@ -29,6 +29,7 @@ The next information you will need to acquire it through publicly exposed RPC's 
 - `trust_hash`: Trusted hash is the hash in the `BlockID` corresponding to the trusted height.
 - `trust_period`: Trust period is the period in which headers can be verified.
   > :warning: This value should be significantly smaller than the unbonding period.
+- `target_height`: Target height is the height you want to sync to. If not set, it will sync to the best snapshot.
 
 If you are relying on publicly exposed RPC's to get the need information, you can use `curl` and [`jq`][jq].
 

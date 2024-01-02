@@ -396,6 +396,10 @@ chunk_request_timeout = "10s"
 # The number of concurrent chunk fetchers to run (default: 1).
 chunk_fetchers = "4"
 
+# The target height to sync (default: 0).
+# If not provided, the node will sync to the best snapshot.
+target_height = "0"
+
 #######################################################
 ###       Block Sync Configuration Options          ###
 #######################################################
